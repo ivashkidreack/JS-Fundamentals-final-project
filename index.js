@@ -49,7 +49,7 @@ function getLoaded() {
             onComplete: function() {
                 if (load.style.opacity === "0") {
                     load.classList.remove("active");
-                    menu.classList.add("active");
+                    location.href = "menu/index.html";
                 }
             }
         });
