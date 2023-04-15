@@ -43,3 +43,5 @@ range.slider.onmousedown = e => {
         document.addEventListener("mousemove", onMouseDrag);
         document.addEventListener("mouseup", onMouseUp);
 };
+
+
