@@ -16,9 +16,8 @@ h1 {
     text-shadow: 3px 1px 3px rgb(4, 41, 7);
 }
 .menu {
-    margin: 10px 300px;
+    margin: 50px 300px;
     position: relative;
-    margin-top: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -36,8 +35,7 @@ h1 {
     font-weight: 300;
     color: aliceblue;
     transition: transform 0.2s ease-in-out;
-}
-      
+}   
 .menu__item:hover {
     transform: scale(1.2);
 }
