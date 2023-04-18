@@ -19,6 +19,8 @@ range.wrapper.onclick = e => {
     range.progress.style.width = `${newLeft + range.slider.offsetWidth}px`;
 
     document.querySelector(".progress-count").textContent = `${Math.floor(newLeft/2)} words`;
+
+    localStorage.setItem("numWord", Math.floor(newLeft/2));
 };
 range.slider.onmousedown = e => {
     e.preventDefault();
@@ -42,6 +44,8 @@ range.slider.onmousedown = e => {
         range.progress.style.width = `${newLeft + range.slider.offsetWidth}px`;
 
         document.querySelector(".progress-count").textContent = `${Math.floor(newLeft/2)} words`;
+
+        localStorage.setItem("numWord", Math.floor(newLeft/2));
     };
     
         document.addEventListener("mousemove", onMouseDrag);
@@ -69,6 +73,8 @@ secondRange.wrapper.onclick = e => {
     secondRange.progress.style.width = `${newLeft + secondRange.slider.offsetWidth}px`;
 
     document.querySelector(".second-progress-count").textContent = `${Math.floor(newLeft/2)} sec`;
+
+    localStorage.setItem("roundTime", Math.floor(newLeft/2));
 };
 secondRange.slider.onmousedown = e => {
     e.preventDefault();
@@ -92,6 +98,8 @@ secondRange.slider.onmousedown = e => {
         secondRange.progress.style.width = `${newLeft + secondRange.slider.offsetWidth}px`;
 
         document.querySelector(".second-progress-count").textContent = `${Math.floor(newLeft/2)} sec`;
+
+        localStorage.setItem("roundTime", Math.floor(newLeft/2));
     };
     
         document.addEventListener("mousemove", onMouseDrag);

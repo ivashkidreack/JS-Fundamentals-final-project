@@ -1,0 +1,65 @@
+.start__game {
+    display: flex;
+    justify-content: center;
+}
+.start__btn {
+    
+    position: relative;
+    margin-top: 50px;
+    padding: 5px 5px;
+    font-family: 'Righteous', cursive;
+    font-size: 40px;
+    color: aliceblue;
+    -webkit-text-stroke: 2px black;
+    border: 2px solid darkgreen;
+    border-radius: 15px;
+    background-color: rgba(93, 114, 97, 0.716);
+    border-color: darkgreen;
+    overflow: hidden;
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.3);
+}
+.start__loading {
+    position: relative;
+}
+.start__loading-bar {
+    position: absolute;
+    top: -100px;
+    display: flex;
+    padding: 15px 40px;
+    margin: 50px 300px;
+    -webkit-text-stroke: 2px black;
+    border: 2px solid darkgreen;
+    border-radius: 15px;
+    background-color: rgba(163, 170, 163, 0.74);
+    overflow: hidden;
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.3);
+}
+.start__loading-cover {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 100%;
+    background-color: forestgreen;
+}
+span.ripple {
+    position: absolute;
+    border-radius: 50%;
+    transform: scale(0);
+    animation: ripple 600ms linear;
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+  
+@keyframes ripple {
+    to {
+      transform: scale(4);
+      opacity: 0;
+    }
+}
+.active {
+    position: relative;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
